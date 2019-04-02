@@ -9,8 +9,8 @@
     <ProjectGuid>{E34EE01C-3392-4F06-922E-8D81C3F82512}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Demo3.Tests</RootNamespace>
-    <AssemblyName>Demo3.Tests</AssemblyName>
+    <RootNamespace>Demo.Tests</RootNamespace>
+    <AssemblyName>Demo.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -54,9 +54,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Demo2\Demo2.csproj">
+    <ProjectReference Include="..\Demo\Demo.csproj">
       <Project>{22221965-18c0-4633-9df8-b26d26bb19f7}</Project>
-      <Name>Demo2</Name>
+      <Name>Demo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

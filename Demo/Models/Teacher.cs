@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
-namespace Demo2.Models
+namespace Demo.Models
 {
     public class Teacher
     {

@@ -1,10 +1,7 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Demo2.Models;
+using Demo.Models;
 
-namespace Demo2.Repository
+namespace Demo.Repository
 {
     public interface ITeacherRepository
     {

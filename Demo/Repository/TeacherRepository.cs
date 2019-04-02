@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using Demo2.DataAccess;
-using Demo2.Models;
+using Demo.DataAccess;
+using Demo.Models;
 
-namespace Demo2.Repository
+namespace Demo.Repository
 {
     public class TeacherRepository : ITeacherRepository
     {

@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Demo2.Models;
-using Demo2.Repository;
-using Demo2.ViewModels;
+﻿using Demo.Models;
+using Demo.Repository;
+using Demo.ViewModels;
 using NUnit.Framework;
+using System.Collections.Generic;
 
-namespace Demo3.Tests
+namespace Demo.Tests
 {
     [TestFixture]
     public class MainWindowViewModelTests
@@ -22,12 +18,12 @@ namespace Demo3.Tests
                 new Teacher {Name = "t2"}
             };
             var vm = new MainWindowViewModel(new TestTeacherRepository(teachers));
-            
+
             CollectionAssert.AreEqual(
                 teachers, vm.Teachers);
         }
 
-        class TestTeacherRepository : ITeacherRepository
+        private class TestTeacherRepository : ITeacherRepository
         {
             private readonly List<Teacher> _teachers;
 
@@ -35,6 +31,7 @@ namespace Demo3.Tests
             {
                 _teachers = teachers;
             }
+
             public List<Teacher> GetTeachers()
             {
                 return _teachers;

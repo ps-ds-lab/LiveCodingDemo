@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Demo2.DataAccess;
-using Demo2.Models;
-using Demo2.Repository;
+﻿using System.Collections.Generic;
+using Demo.Models;
+using Demo.Repository;
 
-namespace Demo2.ViewModels
+namespace Demo.ViewModels
 {
     public class MainWindowViewModel
     {
