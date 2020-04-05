@@ -10,7 +10,7 @@ namespace Demo.Tests
     public class MainWindowViewModelTests
     {
         [Test]
-        public void BasicMath()
+        public void Test()
         {
             var teachers = new List<Teacher>
             {

@@ -7,4 +7,15 @@
     Install-Package EntityFramework
     Install-Package SQLite.CodeFirst
     Install-Package System.Data.SQLite.EF6
-* Install-Package EntityFramework -Version 6.2.0
+    Install-Package System.Data.SQLite
+    Install-Package System.Data.SQLite.Core
+    Install-Package System.Data.SQLite.Linq
+* Create DbContext
+* Create SqliteDropCreateDatabaseAlways<DbContext>
+    * configure model links .Entity<Course>().HasRequired(c => c.Teacher).WithMany(t => t.Courses); 
+    * configure seed
+* Use DbContext in VM
+* Create the Repository implementations
+* Create the Unit test project
+    Install-Package NUnit3TestAdapter
+    Install-Package NUnit
