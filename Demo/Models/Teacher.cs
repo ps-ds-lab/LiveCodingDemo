@@ -15,7 +15,7 @@ namespace Demo.Models
 
         public override string ToString()
         {
-            return Name + " nr. of courses: " + string.Join(", ", (Courses?? new List<Course>()).Select(c => c.Name));
+            return Name + " courses: " + string.Join(", ", (Courses?? new List<Course>()).Select(c => c.Name));
         }
     }
 }
