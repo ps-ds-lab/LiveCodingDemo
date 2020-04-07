@@ -11,10 +11,11 @@
     Install-Package System.Data.SQLite.Core
     Install-Package System.Data.SQLite.Linq
 * Create DbContext
-* Create SqliteDropCreateDatabaseAlways<DbContext>
-    * configure model links .Entity<Course>().HasRequired(c => c.Teacher).WithMany(t => t.Courses); 
-    * configure seed
+* Create SqLiteConfiguration : DbConfiguration
 * Use DbContext in VM
+* Create SqliteDropCreateDatabaseAlways<DbContext>
+    * configure model links .Entity<Course>().HasRequired(c => c.Teacher).WithMany(t => t.Courses);
+    * configure seed
 * Create the Repository implementations
 * Create the Unit test project
     Install-Package NUnit3TestAdapter
