@@ -9,7 +9,7 @@ namespace Demo.ViewModels
         public MainWindowViewModel(
             ITeacherRepository teacherRepository)
         {
-                Teachers = teacherRepository.GetTeachers();
+            Teachers = teacherRepository.GetTeachers();
         }
         public List<Teacher> Teachers { get; set; }
     }
