@@ -12,6 +12,7 @@
     Install-Package System.Data.SQLite.Linq
 * Create DbContext
 * Create SqLiteConfiguration : DbConfiguration
+* Update app.config with the connection string
 * Use DbContext in VM
 * Create SqliteDropCreateDatabaseAlways<DbContext>
     * configure model links .Entity<Course>().HasRequired(c => c.Teacher).WithMany(t => t.Courses);
