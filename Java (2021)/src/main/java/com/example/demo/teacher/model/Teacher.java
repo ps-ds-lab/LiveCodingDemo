@@ -12,9 +12,10 @@ import java.util.List;
 @Entity
 @Data
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Teacher {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -25,9 +26,10 @@ public class Teacher {
     @Column
     private String lastName;
 
-    @Column
-    private String email;
-
-    @OneToMany(mappedBy = "teacher", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "teacher")
     private List<Course> courses;
+
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
 }

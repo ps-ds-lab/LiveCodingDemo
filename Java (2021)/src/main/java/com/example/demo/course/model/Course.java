@@ -1,7 +1,6 @@
 package com.example.demo.course.model;
 
 import com.example.demo.teacher.model.Teacher;
-import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,9 +11,10 @@ import javax.persistence.*;
 @Entity
 @Data
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Course {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -22,8 +22,8 @@ public class Course {
     @Column
     private String name;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "teacher")
-    @NotNull
     private Teacher teacher;
+
 }
